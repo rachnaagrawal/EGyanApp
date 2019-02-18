@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">E-Gyan</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="tagline">Welcome to E-book Store..</string>
+    <string name="loginbutton">Login</string>
+    <string name="cancelbutton">Cancel</string>
+    <string name="passworderror">Password should be of more than 8 characters.</string>
+    <string name="search">Search</string>
+    <string name="fav_books">Favourites</string>
+    <string name="book_title">Book Title</string>
+    <string name="book_description">Description of book</string>
+    <string name="create_account"><font color="#000000">text</font></string>
+    <string name="Email">Email</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="PrivacyPolicypara1">We collect the minimum amount of information about you that is commensurate with providing you with a satisfactory service. This policy indicates the type of processes that may result in data being collected about you. Your use of this website gives us the right to collect that information.</string>
+    <string name="PrivacyPolicypara2">We may collect any or all of the information that you give us depending on the type of transaction you enter into, including your name, enrollment number, and email address, together with data about your use of the App. Other information that may be needed from time to time to process a request may also be collected as indicated on the App.</string>
+    <string name="PrivacyPolicypara3">We use the information collected primarily to process the task for which you visited the website. Data collected in the UK is held in accordance with the Data Protection Act. All reasonable precautions are taken to prevent unauthorised access to this information. This safeguard may require you to provide additional forms of identity should you wish to obtain information about your account details.</string>
+    <string name="PrivacyPolicypara4">We do not disclose any personal information obtained about you from this App to third parties unless you permit us to do so by ticking the relevant boxes in registration or competition forms. We may also use the information to keep in contact with you and inform you of developments associated with us. You will be given the opportunity to remove yourself from any mailing list or similar device. If at any time in the future we should wish to disclose information collected on this website to any third party, it would only be with your knowledge and consent. We may from time to time provide information of a general nature to third parties for example, the number of individuals visiting our website or completing a registration form, but we will not use any information that could identify those individuals.</string>
+    <string name="PrivacyPolicypara5">Any changes to our Privacy Policy will be placed here and will supersede this version of our policy. We will take reasonable steps to draw your attention to any changes in our policy. However, to be on the safe side, we suggest that you read this document each time you use the App to ensure that it still meets with your approval.</string>
+    <string name="PrivacyPolicypara6">If you have any questions about our Privacy Policy, or if you want to know what information we have collected about you, please contact us. You can also correct any factual errors in that information or require us to remove your details from any list under our control.</string>
+
+    <string name="pphead2">Information Collected</string>
+    <string name="pphead1">We are committed to protecting your privacy</string>
+    <string name="pphead3">Information Use</string>
+    <string name="pphead4">Disclosing Information</string>
+    <string name="pphead5">Changes to this Policy</string>
+    <string name="pphead6">Contacting Us</string>
+
+    <string name="aboutApphead1">App Name :</string>
+    <string name="aboutApphead2">Version :</string>
+    <string name="aboutApphead3">More Details :</string>
+
+    <string name="aboutApptext1">E - Gyan App</string>
+    <string name="aboutApptext2">1.1.2</string>
+    <string name="aboutApptext3">E - Gyan App is an android application. E - Gyan App has user-friendly interface which is easy to manage and easy to access. This App mainly targets Students and is for easy sharing of Documents between the Students. The application is specially optimized to be extremely easy to configure and detailed documentation is provided.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="emailid">Email - Id</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="enrollmentno">Enrollment No.</string>
+    <string name="signupbutton">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="mailid">Email-Id</string>
+    <string name="entername">Enter Name</string>
+    <string name="entermailid">Enter Email-Id</string>
+    <string name="submit">Submit</string>
+    <string name="filename">File Name</string>
+    <string name="enterfilename">Enter File Name</string>
+    <string name="enterauthorname">Enter Author Name</string>
+    <string name="enterimage">Enter Image</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

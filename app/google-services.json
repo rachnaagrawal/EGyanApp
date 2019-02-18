@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "747393218205",
+    "firebase_url": "https://egyanapp-ce05d.firebaseio.com",
+    "project_id": "egyanapp-ce05d",
+    "storage_bucket": "egyanapp-ce05d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747393218205:android:19ead5f20696ffbe",
+        "android_client_info": {
+          "package_name": "com.example.android.e_gyanapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747393218205-61lpq3lbvk9kc2fcb75s4nr9jor2l286.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.e_gyanapp",
+            "certificate_hash": "851b53b9455e00cc43f64073bb51068eb87b6264"
+          }
+        },
+        {
+          "client_id": "747393218205-llv1l9shususe3nksbcvb2u8sk21sv9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB85wVoX9oz5nieghB_0VT2P6I8ooZ0iw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747393218205-llv1l9shususe3nksbcvb2u8sk21sv9n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
