@@ -68,19 +68,14 @@
                 android:src="@android:drawable/ic_menu_edit" />-->
 
             <TextView
-                android:id="@+id/Textname"
-                android:layout_width="186dp"
-                android:layout_height="87dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="19dp"
-                android:layout_marginRight="19dp"
-                android:textColor="#fff"
+                android:id="@+id/book_title"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="187dp"
+                android:textColor="#ffffff"
                 android:textSize="24sp"
-                android:textColorHint="@color/White"
-                android:textStyle="bold" />
-
+                android:textStyle="bold"/>
 
 
         </RelativeLayout>
@@ -103,9 +98,10 @@
             android:paddingBottom="20dp">
 
             <Button
+                android:id="@+id/downloadbook"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/TextName"
+                android:layout_below="@+id/profile_layout"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 android:text="Download" />
@@ -124,8 +120,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:textSize="24sp"
-                android:textColor="#000000"/>
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/headshortdesc"

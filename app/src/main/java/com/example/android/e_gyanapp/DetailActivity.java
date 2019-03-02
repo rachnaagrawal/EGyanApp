@@ -1,11 +1,14 @@
 package com.example.android.e_gyanapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,12 +23,12 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class DetailActivity extends AppCompatActivity {
-TextView Textname,authorname,desc;
+TextView downloadbook,authorname,desc,bookname;
 ImageView imagedoc;
     String bk;
     String name;
     private DatabaseReference mDatabase;
-    final ArrayList<Upload> bookEntries = new ArrayList<Upload>();
+    final ArrayList<Upload> bookEntries = new ArrayList<>();
 
 
     @Override
@@ -39,40 +42,37 @@ ImageView imagedoc;
             bk = extras.getString("booknm");
         }
 
-        Textname = findViewById(R.id.TextName);
+        bookname = findViewById(R.id.book_title);
         authorname = findViewById(R.id.authorname);
         desc = findViewById(R.id.shortdesc);
         imagedoc = findViewById(R.id.bookpic);
+        downloadbook=findViewById(R.id.downloadbook);
 
 
          mDatabase = FirebaseDatabase.getInstance().getReference(Constants.DATABASE_PATH_UPLOADS);
-        mDatabase.addValueEventListener(new ValueEventListener() {
+        mDatabase.orderByChild("name").equalTo(bk).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 //iterating through all the values in database
                 for (DataSnapshot postSnapshot : snapshot.getChildren()) {
-                    Upload bookEntry = postSnapshot.getValue(Upload.class);
+                    final Upload bookEntry = postSnapshot.getValue(Upload.class);
                     bookEntries.add(bookEntry);
+                    authorname.setText(bookEntry.author);
+                    desc.setText(bookEntry.shortdesc);
+                    Glide.with(getBaseContext()).load(bookEntry.urlimage).into(imagedoc);
+                   bookname.setText(bookEntry.name);
+                   downloadbook.setOnClickListener(new View.OnClickListener() {
+                       @Override
+                       public void onClick(View v) {
+                           Intent intent = new Intent(Intent.ACTION_VIEW);
+                           intent.setData(Uri.parse(bookEntry.url));
+                           startActivity(intent);
+                       }
+                   });
                 }
 
-
-                Upload obj =new Upload();
-                obj.setName(bk);
-                String namee=obj.getName();
-                int n=0;
-                while(n<bookEntries.size()){
-                    String name=bookEntries.get(n).getName();
-                    if(namee.equals(name)){
-                       // Textname.setText(bookEntries.get(n).getName());
-                        authorname.setText(name);
-                    }
-                    else{
-                        n++;
-                    }
-                }
-
-               /* Toast t=Toast.makeText(getApplicationContext(),bookEntries.get(3).getAuthor(),Toast.LENGTH_SHORT);
-                t.show();*/
+              // Toast t=Toast.makeText(getApplicationContext(),name,Toast.LENGTH_SHORT);
+                //t.show();
             }
 
 
